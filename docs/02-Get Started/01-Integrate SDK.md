@@ -21,7 +21,7 @@ To integrate the UNL Navigation SDK into your iOS application:
    * Choose your desired version, branch, or commit
    * We recommend using the latest stable release
 
-5. **Complete the integration**
+5. **Complete the integration** 
 
    * Click **Add Package** and Xcode will resolve dependencies
    * Select the SDK products you need for your target
