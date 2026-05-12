@@ -1,4 +1,4 @@
-# Base entities
+# Base Entities
 
 This page covers the fundamental building blocks of the iOS SDK: coordinates, paths, and geographic areas.
 
