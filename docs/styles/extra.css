@@ -1,0 +1,231 @@
+/* =========================
+   Brand colors
+   ========================= */
+
+/* Light mode */
+:root {
+  --md-primary-fg-color: #ff0176;
+  --md-primary-fg-color--light: #f83d94;
+  --md-primary-fg-color--dark: #6e0234;
+
+  --md-accent-fg-color: #ff0176;
+}
+
+/* Header background */
+.md-header {
+  background-color: #000000;
+}
+
+.md-header,
+.md-header__title,
+.md-header__button {
+  color: #ffffff;
+}
+
+/* Page title (H1) in black */
+.md-typeset > h1 {
+  color: #000000;
+}
+.md-typeset > h2 {
+  color: #000000;
+}
+.md-typeset > h3 {
+  color: #000000;
+}
+
+/* =========================
+   FORCE readable text (fix invisible body + tables)
+   Put this at the VERY END of the file.
+   ========================= */
+
+/* Light mode text */
+.md-typeset,
+.md-typeset p,
+.md-typeset li,
+.md-typeset span,
+.md-typeset td,
+.md-typeset th,
+.md-typeset caption {
+  color: #111827 !important;  /* near-black */
+}
+
+/* Light mode table borders/background (optional but helps) */
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  border-color: rgba(17, 24, 39, 0.12) !important;
+}
+
+/* Dark mode text */
+[data-md-color-scheme="slate"] .md-typeset,
+[data-md-color-scheme="slate"] .md-typeset p,
+[data-md-color-scheme="slate"] .md-typeset li,
+[data-md-color-scheme="slate"] .md-typeset span,
+[data-md-color-scheme="slate"] .md-typeset td,
+[data-md-color-scheme="slate"] .md-typeset th,
+[data-md-color-scheme="slate"] .md-typeset caption {
+  color: #e5e7eb !important;
+}
+
+/* Dark mode table borders (optional) */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td,
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  border-color: rgba(229, 231, 235, 0.18) !important;
+}
+
+
+/* Dark mode */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #000000;
+  --md-accent-fg-color: #ff0176;
+}
+
+/* =========================
+   Typography (smaller)
+   ========================= */
+
+.md-typeset {
+  font-size: 0.88rem;   /* ~14px */
+  line-height: 1.65;
+  color: rgba(0, 0, 0, 0.78);
+}
+
+.md-typeset p,
+.md-typeset li {
+  line-height: 1.7;
+}
+
+/* H1 – page title */
+.md-typeset h1 {
+  font-size: 1.55rem;   /* was ~2.2rem */
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.8em;
+}
+
+/* H2 */
+.md-typeset h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+
+/* H3 */
+.md-typeset h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-top: 1.6em;
+  margin-bottom: 0.4em;
+}
+
+/* =========================
+   Sidebar / nav sizing
+   ========================= */
+
+.md-nav__link {
+  font-size: 0.76rem;
+}
+
+.md-nav__title {
+  font-size: 0.85rem;
+}
+
+
+/* =========================
+   Layout & components
+   ========================= */
+
+/* Wider content area */
+.md-grid {
+  max-width: 1200px;
+}
+
+/* Softer code blocks */
+.md-typeset pre > code {
+  border-radius: 12px;
+}
+
+
+.md-typeset {
+  color: rgba(0, 0, 0, 0, 0.78);
+}
+
+[data-md-color-scheme="slate"] .md-typeset {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+/* =========================
+   Admonition colors
+   ========================= */
+
+/* NOTE */
+.md-typeset .admonition.note {
+  border-left-color: #3b82f6;
+}
+.md-typeset .admonition.note .admonition-title {
+  color: rgba(59, 130, 246, 0.78);
+}
+
+/* TIP */
+.md-typeset .admonition.tip {
+  border-left-color: #10b981;
+}
+.md-typeset .admonition.tip .admonition-title {
+  color: rgba(16, 185, 129, 0.78);
+}
+
+/* ATTENTION */
+.md-typeset .admonition.attention {
+  border-left-color: #f59e0b;
+}
+.md-typeset .admonition.attention .admonition-title {
+  color: rgba(245, 158, 11, 0.78);
+}
+
+/* ALERT */
+.md-typeset .admonition.alert {
+  border-left-color: #ef4444;
+}
+.md-typeset .admonition.alert .admonition-title {
+  color: rgba(239, 68, 68, 0.78);
+}
+
+/* =========================
+   Generic blockquotes ( > )
+   ========================= */
+
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-primary-fg-color);
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 0.8em 1em;
+  margin: 1em 0;
+  border-radius: 8px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* Dark mode blockquotes */
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.md-typeset img,
+.md-content img,
+article img {
+  max-width: 300px !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  margin-bottom: 4px;
+}
+
+.md-typeset ul ul {
+  list-style-type: circle;
+  margin-left: 1.5em;
+}
+
+.md-typeset ul ul ul {
+  list-style-type: square;
+}
