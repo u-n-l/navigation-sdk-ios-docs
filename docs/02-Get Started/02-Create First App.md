@@ -206,15 +206,6 @@ Paste your Service Key in place of `YOUR_API_TOKEN_HERE`, in between the quotes.
 >
 > When you initialize the SDK with a valid API key, it also performs an automatic activation. This allows better flexibility for licensing.
 
-## What's next?[​](#whats-next "Direct link to What's next?")
-
-Explore what you can do with the map:
-
-* [Draw shapes](../docs/ios/examples/maps-3dscene/shapes.md) — Add polygons, lines, and circles 
-* [Change map styles](../docs/ios/examples/maps-3dscene/map-style.md) — Switch between light, dark, and custom themes 
-* [Search for places](../docs/ios/examples/places-search.md) — Find addresses and points of interest
-* [Add navigation](../docs/ios/examples/routing-navigation.md) — Calculate routes and get turn-by-turn directions 
-
 
 ## Troubleshooting[​](#troubleshooting "Direct link to Troubleshooting")
 
