@@ -1,5 +1,5 @@
-site_name: Navigation SDK Documentation for Android
-site_url: https://u-n-l.github.io/navigation-sdk-android-docs/
+site_name: Navigation SDK Documentation for iOS
+site_url: https://u-n-l.github.io/navigation-sdk-ios-docs/
 theme:
   name: material
   logo: assets/UNL logo_white.svg
@@ -23,7 +23,6 @@ markdown_extensions:
       permalink: true
   - pymdownx.details
 nav:
-  - Home: index.md
   - Overview: 01-Overview/index.md
   - Get Started: 02-Get Started/index.md
   - Core: 03-Core/index.md
